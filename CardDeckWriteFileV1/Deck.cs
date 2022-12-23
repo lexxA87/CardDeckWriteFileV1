@@ -9,6 +9,11 @@
             Reset();
         }
 
+        public Deck(string filename)
+        {
+
+        }
+
         public void Reset()
         {
             Clear();
@@ -36,6 +41,11 @@
             Card cardToDeal = base[index];
             RemoveAt(index);
             return cardToDeal;
+        }
+
+        public void WriteCards(string filename)
+        {
+
         }
     }
 }
